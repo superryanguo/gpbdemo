@@ -1,0 +1,7 @@
+syntax = "proto2"; 
+package myobject; 
+message User {
+ required int64 id = 1;
+ optional string email = 2;
+ optional string name = 3;
+}
