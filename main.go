@@ -21,7 +21,7 @@ func main() {
 		log.Fatal("marshaling error: ", err)
 	}
 	fmt.Printf("Before Marshal data:%v\n", u)
-	fmt.Printf("After Marshal data:%v\n", data)
+	fmt.Printf("After Marshal data:%x\n", data)
 	ur := &myobject.User{}
 	err = proto.Unmarshal(data, ur)
 	fmt.Printf("After Unmarshal data:%v\n", ur)
